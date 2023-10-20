@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<!--viewportはメディアクエリのために必要な記述。以下view portはgoogle推奨の記述。-->
+	<!-- ┏━━━━━━━━━━━━━━━━━━━━ viewport ━━━━━━━━━━━━━━━━━━━━┓ -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- ┗━━━━━━━━━━━━━━━━━━━━ viewport ━━━━━━━━━━━━━━━━━━━━┛ -->
+<!--┏━━━━━━━━━━━━━━━━━　CSS　━━━━━━━━━━━━━━━━━━━━┓-->
+<style>
+@charset "UTF-8";
+/*┏ーーーーーーーーーーリセットCSSーーーーーーーーーー┓*/
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*┗ーーーーーーーーーーリセットCSSーーーーーーーーーー┛*/
+
+
+html{width:100%;}
+body{
+	text-align: center;
+  display:block;
+  background-image:url(forest.jpg);
+  background-size: cover;
+  width:auto;
+}
+.center{
+  display:block;
+  text-align: center;
+  background-color:#FFF;
+  margin:3vw auto;
+  width:70%;
+  height:80%;
+	padding-top:10vw;
+	padding-bottom:10vw;
+}
+
+.title{
+	color:#556b2f;
+  font-family:"メイリオ","ヒラギノ角ゴシック","Arial","游ゴシック","ヒラギノ角ゴ ProN";
+  font-size:4vw;
+  margin:0 auto;
+}
+.date{
+	color:#556b2f;
+  font-family:"メイリオ","ヒラギノ角ゴシック","Arial","游ゴシック","ヒラギノ角ゴ ProN";
+  font-size:2vw;
+  margin:0 auto;
+
+}
+.lunch{
+	margin:8vw;
+}
+
+.yado{
+	margin:8vw;
+}
+
+.camu{
+	margin:8vw;
+}
+
+.lunch a{
+	padding:1vw 3vw;
+	text-decoration:none;
+	color:#556b2f;
+	background-color: #FFF;
+	border:0.1vw solid #556b2f;
+	font-family:"メイリオ","ヒラギノ角ゴシック","Arial","游ゴシック","ヒラギノ角ゴ ProN";
+	font-size:1.5vw;
+	margin:0 auto;
+}
+
+.yado a{
+	padding:1vw 3vw;
+	text-decoration:none;
+	color:#556b2f;
+	background-color: #FFF;
+	border:0.1vw solid #556b2f;
+	font-family:"メイリオ","ヒラギノ角ゴシック","Arial","游ゴシック","ヒラギノ角ゴ ProN";
+	font-size:1.5vw;
+	margin:0 auto;
+}
+
+.camu a{
+	padding:1vw 3vw;
+	text-decoration:none;
+	color:#556b2f;
+	background-color: #FFF;
+	border:0.1vw solid #556b2f;
+	font-family:"メイリオ","ヒラギノ角ゴシック","Arial","游ゴシック","ヒラギノ角ゴ ProN";
+	font-size:1.5vw;
+	margin:0 auto;
+}
+
+.map-lunch-p p{
+	color:#556b2f;
+  font-family:"メイリオ","ヒラギノ角ゴシック","Arial","游ゴシック","ヒラギノ角ゴ ProN";
+  font-size:2vw;
+  margin:0 auto;
+	margin-top:3vw;
+}
+.map-lunch {
+	margin:0 auto;
+	position:relative;
+	width:90%;
+	height:0;
+	padding-top:75%;
+	margin-top:2vw;
+}
+
+.map-lunch iframe{
+	position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.map-camu-p p{
+	color:#556b2f;
+  font-family:"メイリオ","ヒラギノ角ゴシック","Arial","游ゴシック","ヒラギノ角ゴ ProN";
+  font-size:2vw;
+  margin:0 auto;
+	margin-top:3vw;
+}
+
+.map-camu {
+	margin:0 auto;
+	position:relative;
+	width:90%;
+	height:0;
+	padding-top:75%;
+	margin-top:2vw;
+}
+
+.map-camu iframe{
+	position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.omake{
+	margin-top:10vw;
+}
+
+.omake p{
+	color:#556b2f;
+	font-family:"メイリオ","ヒラギノ角ゴシック","Arial","游ゴシック","ヒラギノ角ゴ ProN";
+	font-size:2vw;
+	margin:0 auto;
+	margin-top:3vw;
+	margin-bottom:4vw;
+}
+
+.omake a{
+	padding:1vw 3vw;
+	text-decoration:none;
+	color:#556b2f;
+	background-color: #FFF;
+	border:0.1vw solid #556b2f;
+	font-family:"メイリオ","ヒラギノ角ゴシック","Arial","游ゴシック","ヒラギノ角ゴ ProN";
+	font-size:1.5vw;
+	margin:0 auto;
+}
+</style>
+<!--┗━━━━━━━━━━━━━━━━━　CSS　━━━━━━━━━━━━━━━━━━━━┛-->
+</head>
+
+<body>
+<div class="center">
+<p class="title">D I G I T A L<br>D E T O X</p><br>
+<p class="date">10/21 - 10/22</p>
+
+
+<div class="SPOT">
+  <div class="lunch">
+  <a href="https://maps.app.goo.gl/iJVWDjohAMEeGUwT7" target="blank">
+  とり天を食べます</div></a>
+
+  <div class="yado">
+  <a href="https://www.airbnb.jp/rooms/899459252993673716?adults=1&children=0&enable_m3_private_room=true&infants=0&location=阿蘇&pets=0&check_in=2023-12-05&check_out=2023-12-10&source_impression_id=p3_1697812696_9LQNzzuv8g6Ws3yZ&previous_page_section_name=1001&federated_search_id=f73a6a92-8914-4daa-8ef3-d8bda244e091" target="blank">泊まるところ</a>
+  </div>
+
+  <div class="camu">
+  <a href="https://www.google.com/maps/place/Camu%E3%81%A4%E3%81%B0%E3%81%8D%E5%B1%B1/@33.174149,131.0786979,17z/data=!4m6!3m5!1s0x3541385f3e9f4c19:0xeb2174ba52c00e5c!8m2!3d33.1741445!4d131.0812728!16s%2Fg%2F11c1s199f_?hl=ja&entry=ttu" target="blank">ホストに挨拶行くところ</a>
+  </div>
+</div>
+<div class="map-lunch-p">
+		<p>▽とり天まで</p>
+	</div>
+<div class="map-lunch">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d851505.9158066442!2d130.27484531825462!3d33.52231579639791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d33.5825849!2d130.3673906!4m5!1s0x3546a7164da8c63b%3A0xad6a171f0e649e6e!2z44CSODc0LTA5MTkg5aSn5YiG55yM5Yil5bqc5biC55-z5Z6j5p2x77yX5LiB55uu77yY4oiS77yS77ySIOODrOOCueODiOODqeODs-adsea0i-i7kg!3m2!1d33.3009749!2d131.4995251!5e0!3m2!1sja!2sjp!4v1697815113521!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div class="map-camu-p">
+		<p>▽宿まで</p>
+	</div>
+<div class="map-camu">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d213524.59227365977!2d131.1250492315171!3d33.25806791552397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3546a7164da8c63b%3A0xad6a171f0e649e6e!2z44CSODc0LTA5MTkg5aSn5YiG55yM5Yil5bqc5biC55-z5Z6j5p2x77yX5LiB55uu77yY4oiS77yS77ySIOODrOOCueODiOODqeODs-adsea0i-i7kg!3m2!1d33.3009749!2d131.4995251!4m5!1s0x3541385f3e9f4c19%3A0xeb2174ba52c00e5c!2zQ2FtdeOBpOOBsOOBjeWxseOAgeOAkjg2OS0yNTA0IOeGiuacrOecjOmYv-iYh-mDoeWwj-WbveeUuuilv-mHjO-8ku-8kO-8le-8kuKIku-8mO-8kw!3m2!1d33.1742098!2d131.0812844!5e0!3m2!1sja!2sjp!4v1697815691355!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div class="omake">
+	<p>行きたければ行くし、<br>遠いなら行かなくてもいいの</p>
+
+	<a href="https://maps.app.goo.gl/KFYzDaTJKVWQTRyB8" target="blank">赤牛丼</a>
+	<a href="https://maps.app.goo.gl/KJNqXe5BybcE2T4j7" target="blank">ソフトクリーム</a>
+	<a href="https://maps.app.goo.gl/h1rJHbbsSw2HyLky6" target="blank">つりばし</a>
+</div>
+
+</div>
+
+</body>
+</html>
